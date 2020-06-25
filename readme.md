@@ -8,10 +8,10 @@
 
 <ul>
   <li>
-    <a href="https://desolate-fortress-65956.herokuapp.com/">Spa template</a>
+    <a href="https://desolate-fortress-65956.herokuapp.com/" target="_blank">Spa template</a>
   </li>
   <li>
-    <a href="https://infinite-inlet-71490.herokuapp.com/">Dashboard layout</a>
+    <a href="https://infinite-inlet-71490.herokuapp.com/" target="_blank">Dashboard layout</a>
   </li>
 </ul>
 
