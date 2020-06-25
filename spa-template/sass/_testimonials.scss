@@ -1,0 +1,104 @@
+.testimonials{
+    background-color:  rgba(255, 224, 212, 0.5);
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+
+
+    &__dot-btn{
+        color: rgba(245, 164, 133, 0.5);
+
+        &--active{
+            color: var(--secondary);
+        }
+    }
+
+    &__slide-buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    &__bullet{
+        background-color: transparent;
+        border: none;
+
+        &:focus{
+            background-color: transparent;
+        }
+
+        
+    }
+
+    &__testimonial{
+        padding-left: 15px;
+        padding-right:15px;
+
+        &::before{
+            content: url('../images/quote.gif');
+            display: block;
+            display: flex;
+            justify-content: center;
+            padding-top: 45px;
+           
+        }
+    }
+
+    
+
+    &__phrase{
+        padding-top: 30px;
+    }
+
+    &__name{
+        padding-top: 30px;
+        font-size: 18px;
+        font-family: 'Rufina', serif;
+    }
+
+    &__role{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__imgWrapper{
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    &__img{
+        border-radius: 50%;
+    }
+}
+
+.glide__bullet--active .testimonials__dot-btn{
+    color: var(--secondary);
+}
+
+@media screen and(min-width: 601px){
+
+    .testimonials{
+        margin-top: 100px;
+    }
+
+    .testimonials__testimonial{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+
+@media screen and(min-width: 993px){
+
+    .testimonials{
+        margin-top: 100px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .testimonials__testimonial{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}

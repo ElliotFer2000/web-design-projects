@@ -1,0 +1,145 @@
+.contact{
+
+    
+
+    &__heading{
+        margin-top: 0;
+        font-size: 30px;
+    }
+
+    &__grid-item{
+        grid-column: 1 / 13;
+    }
+
+    &__header{
+        
+        &--grid{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+    }
+
+    &__subtitle{
+
+        margin-top: 0;
+    }
+
+    &__icon{
+        padding: 10px;
+        border-radius: 50%;
+        background-color: var(--secondary);
+        margin-right: 15px;
+        color: var(--primary);
+      
+    }
+
+    &__info{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+
+
+    &__submit{
+        padding: 17px 25px;
+        text-transform: uppercase;
+        background-color: var(--secondary);
+        border-radius: 25px  / 50%;
+        border: none;
+        margin-top: 25px;
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+
+    &__data{
+        margin-top: 30px;
+    }
+
+}
+
+
+@media screen and(min-width: 601px){
+
+    .contact{
+        margin-top: 50px;
+    
+        &__header{
+          
+        }
+
+        &__grid-item{
+            grid-column: 2 / 12;
+        }
+
+        &__heading{
+            text-align: center;
+            font-size: 40px;
+        }
+
+        &__subtitle{
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        &__header{
+
+        }
+
+
+
+       
+    }
+}
+
+@media screen and(min-width: 993px){
+
+    .contact{
+
+        margin-top: 150px;
+        margin-bottom: 150px;
+
+        &__content{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-gap: 15px;
+            align-items: center;
+        }
+
+        &__form{
+            grid-column: 7 / 12;
+         
+        }
+
+        &__data{
+            grid-column: 2 / 6;
+            grid-row: 1;
+            margin-top: 0;
+        }
+
+        &__grid-item{
+            grid-column: 2 / 12;
+        }
+
+        &__heading{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        &__subtitle{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &__header{
+
+        }
+
+        &__info{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+

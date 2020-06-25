@@ -1,0 +1,133 @@
+.blog {
+
+    margin-bottom: 70px;
+    &__post-date{
+        color: #626262;
+    }
+    &__card{
+        margin: 0;
+        box-shadow: none;
+        border: .8px solid rgb(231, 229, 229);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    &__heading{
+        font-size: 30px;
+    }
+
+    &__card-content{
+        flex-grow: 1;
+       
+    }
+    &__cards-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 15px;
+    }
+
+    
+
+    &__card-img{
+        padding: 20px 20px 0 20px;
+    }
+
+    &__card-heading{
+        margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        position: static;
+    }
+
+    &__header-content--grid{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    &__heading--grid-item{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-column: 1 / 13;
+    }
+
+    &__heading{
+        font-size: 30px;
+    }
+
+    &__card-btn {
+        padding: 15px 25px 15px 25px;
+        border-radius: 25px / 50%;
+        border: none;
+        background: var(--secondary);
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+       
+        cursor: pointer;
+
+        &:hover{
+            background-color: var(--accent);
+        }
+    }
+
+    &__action{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+@media screen and(min-width: 601px) {
+
+    .blog {
+
+        &__heading--grid-item{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            grid-column: 2 / 12;
+        }
+
+        &__heading{
+            font-size: 40px;
+        }
+
+        &__cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media screen and(min-width: 993px) {
+
+    .blog {
+        &__heading--grid-item{
+            padding-top: 25px;
+            padding-bottom: 25px;
+            grid-column: 3 / 11;
+            
+        }
+
+        &__heading{
+            font-size: 50px;
+            margin-top: 144px;
+        }
+
+    }
+}
+
+@media screen and(min-width: 1200px) {
+
+    .blog {
+
+       
+        &__cards-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

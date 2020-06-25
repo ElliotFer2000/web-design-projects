@@ -1,0 +1,65 @@
+.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.center-cross-axis {
+    align-items: center;
+}
+
+.main-axis-flex-end {
+    justify-content: flex-end;
+}
+
+.main-axis-flex-start {
+    justify-content: flex-start;
+}
+
+.main-axis-space-between {
+    justify-content: space-between;
+}
+
+.main-axis-space-around {
+    justify-content: space-around;
+}
+
+/*
+Pseudoelemento utilizado para colocar espacio ocupado fantasma de manera que nada
+del contenedor principal de la pagina quede oculto detras del menu lateral
+*/
+
+.wrapper-main-layout{
+    display: flex;
+}
+
+.nav-bar-overlay{
+    display: none;
+    position: fixed;
+    z-index: 120;
+    width: 100vw;
+    height: 100vh;
+    opacity: .9;
+    background-color: #ffffff;
+}
+
+.reset-nav-bar-overlay{
+    display: none !important;
+}
+
+.wrapper-main-layout::before {
+    content: '';
+    display: none;
+    width: var(--nav-bar-width);
+}
+
+.main-layout-container {
+    width: 0;
+    flex-grow: 1
+     /*El espacio que aun queda despues de dar un ancho fijo a la barra de navegacion*/
+}
+
+@media screen and(min-width: 992px){
+    .wrapper-main-layout::before {
+        display: block;
+    }
+}

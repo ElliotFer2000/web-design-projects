@@ -1,0 +1,13 @@
+
+
+# npm
+spa-template/node_modules
+spa-template/.cache
+spa-template/prepros-6.config
+dashboard-layout/node_modules
+dashboard-layout/.cache
+package-lock.json
+*.log
+*.gz
+
+
