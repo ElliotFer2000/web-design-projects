@@ -1,0 +1,148 @@
+.header {
+
+    padding-top: 126px;
+    background-color: var(--primary-color);
+
+
+    &__chess {
+      
+    }
+
+    &__chess-piece {
+        width: 150px;
+    }
+
+    &__container {
+        background-color: var(--primary-color);
+        z-index: 100;
+        
+    }
+
+    &__wrapper {
+        z-index: -1;
+        background-color: var(--primary-color);
+    }
+
+    &__bg {
+        right: 0;
+        bottom: 0;
+        width: 350px;
+        height: 350px;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: radial-gradient(circle at 50% 50%, rgba(161, 16, 20, .5), rgba(161, 16, 20, 1) 60%);
+        }
+    }
+
+    &__chess-groupWrapper {
+        bottom: -30px;
+        right: 0;
+        transform: rotateY(180deg);
+    }
+
+    &__bg-img {
+        object-fit: cover;
+    }
+}
+
+@media screen and(min-width: 576px) {
+
+    .header {
+
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+
+        &__content{
+            grid-column: 1 / 8;
+        }
+    }
+}
+
+@media screen and(min-width: 768px) {
+
+    .header {
+
+        &__bg-img{
+            border-bottom-right-radius: 0;
+        }
+        &__wrapper {
+            border-bottom-right-radius: 0;
+        }
+
+        &__chess-groupWrapper{
+            grid-column: 1 / 12;
+            grid-row: 2;
+        }
+    
+        &__chess-group-img {
+            width: 710px;
+        }
+
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+
+        &__content{
+            grid-column: 1 / 7;
+            grid-row: 1;
+            transform: translateY(70px);
+        }
+    }
+}
+
+@media screen and(min-width: 992px) {
+    .header {
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+        &__chess-group-img {
+            width: 950px;
+        }
+
+  
+
+        &__content{
+            grid-column: 1 / 6;
+            grid-row: 1;
+            transform: translateY(100px);
+        }
+    }
+}
+
+@media screen and(min-width: 1200px) {
+
+    .header{
+
+        &__content{
+            grid-column: 1 / 5;
+           // transform: translateY(150px);
+        }
+
+        &__container{
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+        }
+
+
+
+        &__chess-group-img {
+            width: 1130px;
+        }
+
+        &__header {
+            padding-right: 60px;
+        }
+    }
+    
+}

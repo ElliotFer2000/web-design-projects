@@ -19,7 +19,6 @@
         border: none;
         color: var(--primary);
         cursor: pointer;
-        margin-top: 30px;
         font-family: 'Roboto', sans-serif;
     }
 
@@ -40,12 +39,9 @@
         object-fit: cover;
     }
 
-    &__header {
-        padding-bottom: 15px;
-    }
+   
 
     &__content {
-        padding-bottom: 50px;
         align-self: center;
         margin-left: auto;
         margin-right: auto;
@@ -55,7 +51,8 @@
 
     &__heading {
         font-size: 30px;
-        margin: 0;
+        margin: 0 0 20px 0;
+        text-align: center;
     }
 }
 
@@ -97,7 +94,7 @@
     .appointment{
 
         &__heading{
-            
+            text-align: left;
             font-size: 50px;
         }
         &__content{

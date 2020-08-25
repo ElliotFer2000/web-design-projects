@@ -1,0 +1,49 @@
+.nav{
+    top:0;
+    left: 0;
+    width: 100vw;
+    background-color: #5B0203;
+    height: 64px;
+    z-index: 1000;
+
+    &__fixed-bar{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        background-color: #5B0203;
+        transition: 0.3s opacity;
+    }
+
+    &__link{
+        color: var(--secondary-color);
+
+        &:hover{
+            color: #D68592;
+        }
+    }
+
+    &__item{
+        width: 0;
+        flex-grow: 1;
+        transition: background-color .3s;
+       
+        &:hover{
+            background-color: var(--primary-color);
+        }
+    }
+
+    &__item-link{
+        color: var(--secondary-color);
+    }
+
+    &__item-link:hover{
+        color: var(--secondary-color);
+    }
+
+    &__invisible{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
+ 
+}

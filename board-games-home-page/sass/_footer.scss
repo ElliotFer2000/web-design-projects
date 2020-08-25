@@ -1,0 +1,28 @@
+.footer{
+    background-color: #5B0203;
+  
+
+    &__social{
+        height: 64px;
+    }
+
+    &__link{
+        height: 32px;
+        width: 32px;
+        color: var(--secondary-color);
+
+        &:hover{
+            color: #D68592;
+        }
+    }
+
+    &__name-org{
+        color: var(--secondary-color);
+        margin-right: 30px;
+
+        &:hover{
+            color: #D68592;
+        }
+    }
+    
+}

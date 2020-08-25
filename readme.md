@@ -10,4 +10,7 @@
   <li>
     <a href="https://infinite-inlet-71490.herokuapp.com/">Dashboard layout</a>
   </li>
+<li>
+    <a href="https://infinite-hamlet-67023.herokuapp.com/">Board Games business template</a>
+  </li>
 </ul>

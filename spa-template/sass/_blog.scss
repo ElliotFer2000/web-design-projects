@@ -1,6 +1,13 @@
 .blog {
 
-    margin-bottom: 70px;
+    
+    margin-top: 95px;
+    margin-bottom: 95px;
+
+    &__header{
+        margin-bottom: 40px;
+    }
+    
     &__post-date{
         color: #626262;
     }
@@ -17,6 +24,7 @@
 
     &__heading{
         font-size: 30px;
+        margin: 0 0 15px 0;
     }
 
     &__card-content{
@@ -48,8 +56,6 @@
     }
 
     &__heading--grid-item{
-        padding-top: 40px;
-        padding-bottom: 40px;
         grid-column: 1 / 13;
     }
 
@@ -87,9 +93,10 @@
 
     .blog {
 
+        margin-top: 100px;
+        margin-bottom: 100px;
+
         &__heading--grid-item{
-            padding-top: 10px;
-            padding-bottom: 10px;
             grid-column: 2 / 12;
         }
 
@@ -106,16 +113,17 @@
 @media screen and(min-width: 993px) {
 
     .blog {
+        margin-top: 150px;
+        margin-bottom: 150px;
+
         &__heading--grid-item{
-            padding-top: 25px;
-            padding-bottom: 25px;
             grid-column: 3 / 11;
             
         }
 
         &__heading{
             font-size: 50px;
-            margin-top: 144px;
+           
         }
 
     }
@@ -124,7 +132,8 @@
 @media screen and(min-width: 1200px) {
 
     .blog {
-
+        margin-top: 200px;
+        margin-bottom: 200px;
        
         &__cards-grid {
             grid-template-columns: repeat(3, 1fr);

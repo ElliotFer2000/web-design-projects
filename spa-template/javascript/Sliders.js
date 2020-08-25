@@ -20,7 +20,7 @@ function getSlider(slider) {
                         perView: 3
                     },
                     601: {
-                        perView: 1
+                        perView: 2
                     }
                 }
             })

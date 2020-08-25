@@ -1,0 +1,54 @@
+.products{
+
+  background-color: var(--primary-color);
+
+  &__heading{
+    color: var(--secondary-color);
+    font-size: 30px;
+  }
+
+  &__card{
+    width: 200px;
+    min-height: 350px;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+  }
+
+  &__product-heading{
+    color: var(--accent-color);
+    font-size: 16px;
+  }
+
+  &__product-price{
+    font-size: 16px !important;
+    color: #400305 !important;
+  }
+
+  &__product-img{
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+  }
+
+  &__slider{
+    background-image: radial-gradient(circle,rgba(161, 16, 20, .6), var(--primary-color) 50%),url("../images/domino.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and(min-width: 1200px){
+
+  .products{
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+
+@media screen and(min-width: 768px){
+
+  .products{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

@@ -1,0 +1,101 @@
+.projects {
+  background-color: var(--primary-color);
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  &__heading {
+    font-size: 30px;
+    color: var(--primary-color);
+  }
+
+  &__header{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    writing-mode: vertical-lr;
+    transform: rotateZ(180deg);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__link:hover {
+    color: #D68592;
+  }
+
+  &__card {
+    width: 250px;
+    min-height: 333px;
+    border-radius: 15px;
+    box-shadow: rgba(96, 4, 4, 0.93) -15px 0 30px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+
+    transition: 0.2s transform;
+
+    &:hover{
+      transform: translateY(-16px);
+    }
+
+    &:hover ~  &{
+      transform: translateX(100px);
+    }
+
+    &:focus-within ~  &{
+      transform: translateX(100px);
+    }
+  }
+  
+
+
+  &__content {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  &__project-heading {
+    color: var(--secondary-color);
+    font-size: 20px;
+   
+  }
+
+  &__date {
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-size: 13px;
+  }
+
+  &__project-img {
+    background-color: var(--secondary-color);
+  }
+
+  &__slider {
+    background-image: radial-gradient(circle, rgba(161, 16, 20, .6), var(--primary-color) 50%), url("../images/dice_PNG51.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    width: 0;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+
+  .projects {
+
+    &__heading{
+    
+     
+  
+    }
+    
+    &__header {
+      width: 300px;
+      writing-mode: horizontal-tb;
+      transform: rotateZ(0deg);
+    }
+  }
+}

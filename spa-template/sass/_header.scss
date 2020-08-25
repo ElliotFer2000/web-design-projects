@@ -1,5 +1,5 @@
 .header {
-    background-image: url("http://demo.themeies.com/leospa//images/leaf.png");
+    
     background-size: 12%;
     background-repeat: no-repeat;
     background-position: left center;
@@ -53,7 +53,6 @@
     &__sidenavLinkItem {
         display: flex;
         justify-content: center;
-        margin-bottom: 15px;
     }
 
     &__sidenav-logo {
@@ -113,7 +112,7 @@
         padding-left: 5%;
         padding-right: 5%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     &__content {
@@ -165,7 +164,7 @@
 @media screen and(min-width: 601px) {
 
     .header {
-
+        background-image: url("http://demo.themeies.com/leospa//images/leaf.png");
         &--grid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);

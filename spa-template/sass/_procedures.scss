@@ -1,6 +1,11 @@
 .procedures {
 
-    
+    margin-top: 95px;
+
+    &__header{
+        margin-bottom: 40px;
+    }
+
     &__card{
         margin: 0;
         box-shadow: none;
@@ -13,6 +18,8 @@
     }
 
     &__heading{
+        margin-top: 0;
+        margin-bottom: 15px;
         font-size: 30px;
     }
 
@@ -45,8 +52,6 @@
     }
 
     &__heading--grid-item{
-        padding-top: 40px;
-        padding-bottom: 40px;
         grid-column: 1 / 13;
     }
 
@@ -84,9 +89,10 @@
 
     .procedures {
 
+        margin-top: 100px;
+
         &__heading--grid-item{
-            padding-top: 10px;
-            padding-bottom: 10px;
+
             grid-column: 2 / 12;
         }
 
@@ -103,16 +109,17 @@
 @media screen and(min-width: 993px) {
 
     .procedures {
+        margin-top: 150px;
+        
         &__heading--grid-item{
-            padding-top: 25px;
-            padding-bottom: 25px;
+           
             grid-column: 3 / 11;
             
         }
 
         &__heading{
             font-size: 50px;
-            margin-top: 144px;
+           
         }
 
     }
@@ -121,8 +128,8 @@
 @media screen and(min-width: 1200px) {
 
     .procedures {
+        margin-top: 200px;
 
-       
         &__cards-grid {
             grid-template-columns: repeat(3, 1fr);
         }
