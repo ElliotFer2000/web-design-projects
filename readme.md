@@ -13,12 +13,11 @@
   <li>
     <a href="https://infinite-inlet-71490.herokuapp.com/">Dashboard layout</a>
   </li>
-<<<<<<< HEAD
+
 <li>
     <a href="https://infinite-hamlet-67023.herokuapp.com/">Board Games business template</a>
   </li>
 </ul>
-=======
+
 </ul>
 
->>>>>>> 16400cc16ec567f641954787aae8b29150c4bf59
