@@ -4,20 +4,5 @@
 
 <p>The projects also are built with the help of <a href="https://parceljs.org/getting_started.html">Parcel bundler</a></p>
 
-<p>You can see each web project working in the following links: </p>
-
-<ul>
-  <li>
-    <a href="https://desolate-fortress-65956.herokuapp.com/">Spa template</a>
-  </li>
-  <li>
-    <a href="https://infinite-inlet-71490.herokuapp.com/">Dashboard layout</a>
-  </li>
-
-<li>
-    <a href="https://infinite-hamlet-67023.herokuapp.com/">Board Games business template</a>
-  </li>
-</ul>
-
 </ul>
 
